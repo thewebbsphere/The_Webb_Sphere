@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PNG Icon -->
+    <link rel="icon" href="./images/TWS-Tab-Logo.png" type="image/png">
+    <title>TWS</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/ed7570f69a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="home-page contact-page">
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-logo">
+            <img src="./images/The Web Sphere Logo.png" alt="The Web Sphere Logo" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-links navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        HOME
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="About-Us.html" class="nav-link">
+                        OUR AGENCY
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link active">
+                        OUR SERVICES
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        CONTACTS
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="contact-hero-section d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="contact-heading">
+            We're delighted to work with you on your incredible project
+        </h1>
+    </div>
+
+    <div class="contact-main-section container-fluid d-flex justify-content-center align-items-center">
+        <div class="row w-100 contact-form-row">
+            <!-- Left: Contact Form -->
+            <div class="contact-col-left col-12 col-lg-7 px-4 py-5 d-flex align-items-center justify-content-center">
+                <form class="w-100 contact-form">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="firstName" class="form-label">First</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="name" required>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="secondName" class="form-label">Second</label>
+                            <input type="text" class="form-control" id="secondName" name="secondName" placeholder="name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="email@mail.com" required>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+254 712 345 678" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="service" class="form-label">Service</label>
+                        <select class="form-select" id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <optgroup label="Web Development">
+                                <option value="website-design">Website Design</option>
+                                <option value="web-app-dev">Web Application Development</option>
+                                <option value="ecommerce">E-commerce Solutions</option>
+                                <option value="maintenance">Website Maintenance</option>
+                                <option value="seo">SEO Optimization</option>
+                            </optgroup>
+                            <optgroup label="Graphic Design">
+                                <option value="branding">Branding & Logo Design</option>
+                                <option value="print-design">Print Design</option>
+                                <option value="digital-ads">Digital Ads & Banners</option>
+                                <option value="ui-ux">UI/UX Design</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Hello" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+            <!-- Right: Company Info -->
+            <div class="contact-col-right col-12 col-lg-5 px-4 py-5 d-flex align-items-center justify-content-center">
+                <div class="contact-info-box w-100 text-center text-lg-start">
+                    <img src="./images/The Web Sphere Logo.png" alt="The Web Sphere Logo" class="mb-3" style="max-width: 120px;">
+                    <h2 class="company-name mb-3">The Web Sphere</h2>
+                    <div class="mb-2"><i class="fas fa-phone-alt me-2"></i>+254 722 993 883</div>
+                    <div class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>CBD, Nairobi City, Kenya</div>
+                    <div class="mb-2"><i class="fas fa-envelope me-2"></i>info@thewebsphere.co.ke</div>
+                    <div class="mt-4">
+                        <strong>Opening Hours</strong>
+                        <div>Mon - Fri: 9:00am - 6:00pm</div>
+                        <div>Sat: 10:00am - 2:00pm</div>
+                        <div>Sun: Closed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer    -->
+    <footer class="site-footer">
+        <div class="footer-content d-flex">
+            <div class="footer-contact">
+                <span><i class="fas fa-envelope"></i> info@thewebsphere.co.ke</span><br>
+                <span><i class="fas fa-phone"></i> +254 722 993 883 </span><br>
+                <span><i class="fas fa-map-marker-alt"></i> CBD, Nairobi City, Kenya.</span>
+            </div>
+            <div class="footer-newsletter">
+                <form autocomplete="off">
+                    <label for="newsletter-email">Subscribe to our newsletter</label>
+                    <div class="newsletter-input-group">
+                        <input type="email" id="newsletter-email" name="newsletter-email"
+                            placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2025 The Web Sphere. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
