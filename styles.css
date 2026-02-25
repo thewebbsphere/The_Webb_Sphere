@@ -1,3 +1,24 @@
+/* Absolutely positioned CTA button for hero section */
+.hero-cta-absolute {
+    position: absolute;
+    bottom: 30%;
+    left: 32%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
+    background-color: var(--ghost-white);
+    font-weight: 700;
+    color: var(--periwinkle);
+    border-radius: 0;
+    text-decoration: none;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+.hero-cta-absolute:hover {
+    background-color: var(--periwinkle);
+    color: var(--ghost-white)
+}
 /*********************************************************************** Global Stylesheet for the Website ***********************************************************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -29,7 +50,7 @@
 :root {
     --ghost-white: #f8f7ffff;
     --periwinkle: #000000;
-    --soft-periwinkle: #9381ffff;
+    --soft-periwinkle: #004aad;
 }
 
 body {
@@ -106,26 +127,16 @@ body {
 .nav-link {
     font-size: 14px;
     color: var(--periwinkle);
-    text-decoration: none;
     position: relative;
-    transition: color 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    border-bottom: 1.4px solid var(--soft-periwinkle);
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 4px;
-    background-color: var(--soft-periwinkle);
-    transition: width 0.4s ease;
+.nav-link:hover {
+    background-color: rgba(0, 74, 173, 0.5)
+;
 }
 
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
-}
 
 .navbar-toggler {
     outline: none;
