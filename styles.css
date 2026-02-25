@@ -27,16 +27,16 @@
 }
 
 :root {
-    --white: #fff;
-    --black: #000;
-    --khaki: #F0E68C;
+    --ghost-white: #f8f7ffff;
+    --periwinkle: #000000;
+    --soft-periwinkle: #9381ffff;
 }
 
 body {
     animation: none;
-    color: var(--black);
+    color: var(--periwinkle);
     scroll-behavior: smooth;
-    background-color: var(--white);
+    background-color: var(--ghost-white);
     padding: 0;
     margin: 0;
 }
@@ -54,7 +54,7 @@ body {
     }
 }
 
-/*********************************************************************** Navigation Bar ***********************************************************************/
+/* Navigation Bar ***********************************************************************/
 
 .navbar {
     display: flex;
@@ -63,24 +63,24 @@ body {
     margin: 0;
     padding: 0 2rem;
     width: 100%;
-    max-height: 15%;
+    height: 11vh;
     top: 0;
     position: sticky;
-    background-color: var(--white);
+    background-color: var(--ghost-white);
     z-index: 1000;
-    color: var(--black);
+    color: var(--periwinkle);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    box-shadow: 0 8px 24px -8px var(--khaki);
+    box-shadow: 0 8px 24px -8px var(--soft-periwinkle);
     overflow: hidden;
 }
 
 .navbar-logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--black);
+    color: var(--periwinkle);
     text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ body {
 
 .nav-link {
     font-size: 14px;
-    color: var(--black);
+    color: var(--periwinkle);
     text-decoration: none;
     position: relative;
     transition: color 0.4s ease-in-out;
@@ -118,7 +118,7 @@ body {
     bottom: 0;
     width: 0;
     height: 4px;
-    background-color: var(--khaki);
+    background-color: var(--soft-periwinkle);
     transition: width 0.4s ease;
 }
 
@@ -129,14 +129,14 @@ body {
 
 .navbar-toggler {
     outline: none;
-    border: 1px solid var(--black);
+    border: 1px solid var(--periwinkle);
     box-shadow: none;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
     outline: none;
-    border: 1px solid var(--black);
+    border: 1px solid var(--periwinkle);
     box-shadow: none;
 }
 
@@ -145,13 +145,13 @@ body {
 }
 
 .collapse.show {
-    background-color: var(--white);
+    background-color: var(--ghost-white);
     padding: 1rem 0;
 }
 
 .collapse .nav-link {
     display: block; 
-    color: var(--black);
+    color: var(--periwinkle);
     text-decoration: none;
     transition: .7s ease;
 }
@@ -168,7 +168,7 @@ body {
     align-items: center;
     background-size: cover;
     background-position: center;
-    color: var(--white);
+    color: var(--ghost-white);
     padding: 20px;
     position: relative;
     z-index: 1;
@@ -238,20 +238,20 @@ body {
     position: absolute;
     left: -4%;
     transform: translateY(-50%);
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     z-index: 3;
     display: flex;
     flex-direction: column;
 }
 
 .graphic-web {
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     font-family: 'Martius', sans-serif;
     margin-top: 2.1rem;
 }
 
 .studio {
-    color: var(--black); 
+    color: var(--periwinkle); 
     align-self: flex-end;
     font-family: 'Martius', sans-serif;
     margin-right: 20px;
@@ -263,19 +263,19 @@ body {
     padding: 20px;
     font-size: 1.1rem;
     line-height: 1.4;
-    color: var(--black);
+    color: var(--periwinkle);
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-weight: light;
     text-align: right; 
-    background-color: var(--white);
+    background-color: var(--ghost-white);
     border-radius: 10px;
-    border: 2.1px solid var(--black);
+    border: 2.1px solid var(--periwinkle);
     max-width: 70%; 
 }
 
 .main-paragraph-head {
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     font-weight: 900;
     font-size: 1.4rem;
 }
@@ -295,7 +295,7 @@ img[alt="Graphic-3"] {
     justify-content: space-between;
     height: auto;
     padding: 40px 20px;
-    border-bottom: 21px solid var(--khaki);
+    border-bottom: 21px solid var(--soft-periwinkle);
 }
 
 .about-section .about-content {
@@ -303,7 +303,7 @@ img[alt="Graphic-3"] {
     max-width: calc(50% - 40px);
     margin: 0 210px;
     font-family: "Montserrat", sans-serif;
-    color: var(--black);
+    color: var(--periwinkle);
 }
 
 .about-section .about-content h2 {
@@ -313,7 +313,7 @@ img[alt="Graphic-3"] {
     margin-bottom: 4.9rem;
     margin-left: -210px;
     padding-left: 14px;
-    border-bottom: 2.1px solid var(--black);
+    border-bottom: 2.1px solid var(--periwinkle);
 }
 
 .about-section .about-content p {
@@ -327,8 +327,8 @@ img[alt="Graphic-3"] {
     padding: 10px 20px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--black);
-    border: 2.1px solid var(--black);
+    color: var(--periwinkle);
+    border: 2.1px solid var(--periwinkle);
     border-radius: 14px;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -342,7 +342,7 @@ img[alt="Graphic-3"] {
 }
 
 .about-section .about-image {
-    border: 4.9rem solid var(--black);
+    border: 4.9rem solid var(--periwinkle);
 }
 
 .about-section.visible {
@@ -376,15 +376,15 @@ img[alt="Graphic-3"] {
 @keyframes buttonStyleChange {
     0% {
         background-color: transparent;
-        color: var(--black);
+        color: var(--periwinkle);
     }
     50% {
-        background-color: var(--khaki);
-        color: var(--black);
+        background-color: var(--soft-periwinkle);
+        color: var(--periwinkle);
     }
     100% {
         background-color: transparent;
-        color: var(--black);
+        color: var(--periwinkle);
     }
 }
 
@@ -392,7 +392,7 @@ img[alt="Graphic-3"] {
 
 .testimonials-section {
     padding: 50px 20px;
-    background-color: var(--black);
+    background-color: var(--periwinkle);
     text-align: center;
     overflow: hidden;
     height: 49vh;
@@ -402,7 +402,7 @@ img[alt="Graphic-3"] {
     font-family: 'Martius', sans-serif;
     font-size: 3.6rem;
     margin: 5rem 0;
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
 }
 
 .testimonials-container {
@@ -438,18 +438,18 @@ img[alt="Graphic-3"] {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-    color: var(--white);
+    color: var(--ghost-white);
 }
 
 .testimonial p {
-    color: var(--white);
+    color: var(--ghost-white);
 }
 
 /*********************************************************************** Footer Section ***********************************************************************/
 
 .site-footer {
     padding: 49px;
-    border-top: 2.1rem solid var(--khaki);
+    border-top: 2.1rem solid var(--soft-periwinkle);
 }
 
 .footer-content {
@@ -463,19 +463,19 @@ img[alt="Graphic-3"] {
     display: block;
     margin-bottom: 10px;
     font-size: 0.9rem;
-    color: var(--black);
+    color: var(--periwinkle);
 }
 
 .footer-contact i {
     padding: 14px;
-    background-color: var(--khaki);
+    background-color: var(--soft-periwinkle);
     border-radius: 7px;
     transition: color 0.3s ease;
 }
 
 .footer-contact i:hover {
-    background-color: var(--black);
-    color: var(--khaki);
+    background-color: var(--periwinkle);
+    color: var(--soft-periwinkle);
 }
 
 .footer-newsletter {
@@ -486,7 +486,7 @@ img[alt="Graphic-3"] {
     display: block;
     margin-bottom: 10px;
     font-size: 1.4rem;
-    color: var(--black);
+    color: var(--periwinkle);
     padding-bottom: 14px;
 }
 
@@ -499,14 +499,14 @@ img[alt="Graphic-3"] {
 
 .newsletter-input-group input {
     padding: 10px;
-    border: 1px solid var(--black);
+    border: 1px solid var(--periwinkle);
     border-radius: 5px;
     font-size: 0.9rem;
 }
 
 .newsletter-input-group button {
     padding: 10px 15px;
-    background-color: var(--khaki);
+    background-color: var(--soft-periwinkle);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -514,14 +514,14 @@ img[alt="Graphic-3"] {
 }
 
 .newsletter-input-group button:hover {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--periwinkle);
+    color: var(--ghost-white);
 }
 
 .footer-social a {
     margin: 0 10px;
     font-size: 1.8rem;
-    color: var(--black);
+    color: var(--periwinkle);
     transition: color 0.3s ease;
     border-radius: 7px;
 }
@@ -531,14 +531,14 @@ img[alt="Graphic-3"] {
 }
 
 .footer-social a:hover {
-    color: var(--khaki);
-    background-color: var(--black);
+    color: var(--soft-periwinkle);
+    background-color: var(--periwinkle);
 }
 
 .footer-copy {
     margin-top: 20px;
     font-size: 0.8rem;
-    color: var(--black);
+    color: var(--periwinkle);
 }
 
 .separator-image,
@@ -551,7 +551,7 @@ img[alt="Graphic-3"] {
 @media (max-width: 768px) {
     .navbar-toggler {
         padding: 3px 9px;
-        background-color: var(--khaki);
+        background-color: var(--soft-periwinkle);
         border-radius: 5px;
     }
 
@@ -564,7 +564,7 @@ img[alt="Graphic-3"] {
         padding-top: 36px;
         padding-bottom: 36px;
         background-size: contain;
-        background-color: var(--black);
+        background-color: var(--periwinkle);
         height: 79vh;
         overflow: hidden;
     }
@@ -585,12 +585,12 @@ img[alt="Graphic-3"] {
         font-size: 3.5rem;
         margin-left: 3rem;
         padding-top: 7rem;
-        border-bottom: 2.1px solid var(--white);
+        border-bottom: 2.1px solid var(--ghost-white);
     }
 
     .main-section .right-side .main-heading .studio {
         font-size: 3.5rem;
-        color: var(--white);
+        color: var(--ghost-white);
     }
 
     .main-section .right-side .main-paragraph {
@@ -599,8 +599,8 @@ img[alt="Graphic-3"] {
         letter-spacing: 1;
         line-height: 24px;
         padding: 10px;
-        background-color: var(--black);
-        color: var(--white);
+        background-color: var(--periwinkle);
+        color: var(--ghost-white);
         width: 100%;
         margin-top: 14rem;
         border-radius: 0;
@@ -614,8 +614,8 @@ img[alt="Graphic-3"] {
         padding: 10px 20px;
         font-size: 1rem;
         font-weight: bold;
-        color: var(--black);
-        background-color: var(--white);
+        color: var(--periwinkle);
+        background-color: var(--ghost-white);
         border: none;
         border-radius: 5px;
         text-align: center;
@@ -624,7 +624,7 @@ img[alt="Graphic-3"] {
     }
 
     .main-section .right-side .cta-button:hover {
-        background-color: var(--black);
+        background-color: var(--periwinkle);
         color: var (--khaki);
     }
 
@@ -648,7 +648,7 @@ img[alt="Graphic-3"] {
         margin-bottom: 2rem;
         margin-left: 0;
         padding-left: 0;
-        border-bottom: 2.1px solid var(--black);
+        border-bottom: 2.1px solid var(--periwinkle);
         text-align: end;
         width: 100%;
     }
@@ -674,7 +674,7 @@ img[alt="Graphic-3"] {
 
     .about-section .about-image {
         margin: 20px 0;
-        border: 2.1rem solid var(--white);
+        border: 2.1rem solid var(--ghost-white);
         box-sizing: border-box;
         width: 100%;
         display: block;
@@ -689,7 +689,7 @@ img[alt="Graphic-3"] {
         padding: 40px 10px;
         min-height: 490px;
         height: auto;
-        border-top: 3rem solid var(--khaki);
+        border-top: 3rem solid var(--soft-periwinkle);
     }
 
     .testimonials-section h2 {
@@ -697,7 +697,7 @@ img[alt="Graphic-3"] {
         font-size: 2.8rem;
         text-align: start;
         padding-left: 7px;
-        border-bottom: 2.1px solid var(--white);
+        border-bottom: 2.1px solid var(--ghost-white);
     }
 
     .testimonials-container {
@@ -766,7 +766,7 @@ img[alt="Graphic-3"] {
         width: 100%;
         height: auto;
         margin: 20px 0;
-        border: 2.1rem solid var(--white);
+        border: 2.1rem solid var(--ghost-white);
         box-sizing: border-box;
     }
 }
@@ -797,7 +797,7 @@ img[alt="Graphic-3"] {
         box-shadow: none;
         float: right;
         font-size: 1.5rem;
-        color: var(--black);
+        color: var(--periwinkle);
         transition: transform 0.3s;
         z-index: 2;
     }
@@ -895,7 +895,7 @@ img[alt="Graphic-3"] {
     outline: none;
     box-shadow: none;
     font-size: 1.5rem;
-    color: var(--black);
+    color: var(--periwinkle);
     transition: transform 0.3s;
     margin-left: auto;
     margin-right: 0;
@@ -983,12 +983,12 @@ img[alt="Graphic-3"] {
 .card:hover {
     transform: scale(1.02);
     border-radius: 10px;
-    box-shadow: 5px 2.5px 5px -2px var(--khaki);
+    box-shadow: 5px 2.5px 5px -2px var(--soft-periwinkle);
 }
 
 .card-body {
     padding: 1rem;
-    border: 1.4px solid var(--khaki);
+    border: 1.4px solid var(--soft-periwinkle);
 }
 
 .card-title {
@@ -1013,20 +1013,20 @@ img[alt="Graphic-3"] {
     display: block;
     font-size: 3.6rem;
     opacity: .5;
-    border-bottom: 1.4px solid var(--khaki);
+    border-bottom: 1.4px solid var(--soft-periwinkle);
     margin: 2.1rem 0;
     padding: 2.1rem 0;
 }
 
 .about-header-span {
-    color: var(--black);
+    color: var(--periwinkle);
     font-family: 'Kangu', sans-serif;
     font-size: 2.1rem;
     margin-right: 14px;
 }
 
 .about-row {
-    border-bottom: 1.4px solid var(--khaki);
+    border-bottom: 1.4px solid var(--soft-periwinkle);
     padding: 2.1rem 0;
 }
 
@@ -1058,10 +1058,10 @@ img[alt="Graphic-3"] {
 
 .duties-subtitle {
     font-family: 'Martius', sans-serif;
-    border-bottom: 2.1px solid var(--black);
+    border-bottom: 2.1px solid var(--periwinkle);
     font-size: 4.9rem;
     margin-bottom: 3.6rem;
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
 }
 
 .duties-head {
@@ -1084,7 +1084,7 @@ img[alt="Graphic-3"] {
     width: 75%;
     border: none;
     margin: 0 14rem;
-    border-top: .7rem solid var(--khaki);
+    border-top: .7rem solid var(--soft-periwinkle);
     transform: translateY(-50%);
     z-index: 0;
 }
@@ -1106,7 +1106,7 @@ img[alt="Graphic-3"] {
     width: 420px; 
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border: 2.1px solid var(--black);
+    border: 2.1px solid var(--periwinkle);
     z-index: 2;
     max-height: 400px; /* Increased max-height */
     overflow-y: auto; /* Changed overflow to auto for vertical scrolling */
@@ -1117,8 +1117,8 @@ img[alt="Graphic-3"] {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--khaki);
-    color: var(--black);
+    background-color: var(--soft-periwinkle);
+    color: var(--periwinkle);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1131,17 +1131,17 @@ img[alt="Graphic-3"] {
 .phase-title {
     font-size: 28px;
     padding: 4.5px;
-    background: linear-gradient(to left, var(--khaki), var(--black));
+    background: linear-gradient(to left, var(--soft-periwinkle), var(--periwinkle));
     border-radius: 7px;
     width: 75%;
     background-size: 200% auto;
-    color: var(--white);
+    color: var(--ghost-white);
     transition: background-position 3s ease-in-out, color 0.3s ease;
 }
 
 .phase-title:hover {
     background-position: -100% center;
-    color: var(--white);
+    color: var(--ghost-white);
 }
 
 .phase-details .phase-title i {
@@ -1152,8 +1152,8 @@ img[alt="Graphic-3"] {
 }
 
 .phase-details .phase-title i:hover {
-    color: var(--khaki);
-    background-color: var(--black);
+    color: var(--soft-periwinkle);
+    background-color: var(--periwinkle);
     border-radius: 7px;
 }
 
@@ -1186,8 +1186,8 @@ img[alt="Graphic-3"] {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--khaki);
-    color: var(--black);
+    background-color: var(--soft-periwinkle);
+    color: var(--periwinkle);
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -1198,8 +1198,8 @@ img[alt="Graphic-3"] {
 }
 
 .phase-button:hover {
-    background-color: var(--black);
-    color: var(--khaki);
+    background-color: var(--periwinkle);
+    color: var(--soft-periwinkle);
     width: 49px;
     height: 49px;
 }
@@ -1215,7 +1215,7 @@ img[alt="Graphic-3"] {
 }
 
 .quote-section {
-    background-color: var(--khaki);
+    background-color: var(--soft-periwinkle);
     padding: 20px;
 }
 
@@ -1253,11 +1253,11 @@ img[alt="Graphic-3"] {
     justify-content: center;
     gap: 20px;
     padding: 49px 0;
-    border-left: 4px solid var(--khaki);
+    border-left: 4px solid var(--soft-periwinkle);
 }
 .service-category-card {
-    background-color: var(--white);
-    border: 1px solid var(--black);
+    background-color: var(--ghost-white);
+    border: 1px solid var(--periwinkle);
     border-radius: 10px;
     padding: 20px;
     width: 300px;
@@ -1269,7 +1269,7 @@ img[alt="Graphic-3"] {
 .service-categories .service-link {
     font-family: 'Martius', sans-serif;
     font-size: 27px;
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     padding: 1px 170px;
     border: none;
 }
@@ -1277,7 +1277,7 @@ img[alt="Graphic-3"] {
 .service-categories .service-link .service-icon {
     font-size: 27px;
     font-weight: light;
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     padding: 0 69px;
 }
 
@@ -1302,14 +1302,14 @@ img[alt="Graphic-3"] {
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: .7px;
-    color: var(--black);
+    color: var(--periwinkle);
 }
 
 .values {
     padding: 140px 0;
     border-top-right-radius: 14px;
-    border-top: 4px solid var(--khaki);
-    border-right: 4px solid var(--khaki);
+    border-top: 4px solid var(--soft-periwinkle);
+    border-right: 4px solid var(--soft-periwinkle);
 }
 
 .values .values-right {
@@ -1319,7 +1319,7 @@ img[alt="Graphic-3"] {
 .values .values-head {
     font-family: 'Martius', sans-serif;
     font-size: 3.6rem;
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     text-align: center;
     margin-bottom: 20px;
     margin-left: 21px;
@@ -1329,7 +1329,7 @@ img[alt="Graphic-3"] {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--black);
+    color: var(--periwinkle);
     text-align: center;
     max-width: 800px;
     padding: 130px 14px;
@@ -1339,17 +1339,17 @@ img[alt="Graphic-3"] {
 }
 .values .values-text:hover {
     transform: translateY(-7px);
-    box-shadow: 0 8px 24px -8px var(--khaki);
+    box-shadow: 0 8px 24px -8px var(--soft-periwinkle);
 }
 
 .values-accordion {
-    border: 1.4px solid var(--khaki);
+    border: 1.4px solid var(--soft-periwinkle);
 }
 
 /* Override Bootstrap accordion open background to khaki */
 .values .accordion-button:not(.collapsed) {
-    background-color: var(--khaki) !important;
-    color: var(--black) !important;
+    background-color: var(--soft-periwinkle) !important;
+    color: var(--periwinkle) !important;
     box-shadow: none;
 }
 .values .accordion-button:focus {
@@ -1361,7 +1361,7 @@ img[alt="Graphic-3"] {
 
 .portfolio {
     padding: 63px 0;
-    border-right: 4px solid var(--khaki);
+    border-right: 4px solid var(--soft-periwinkle);
 }
 
 .portfolio-row {
@@ -1372,7 +1372,7 @@ img[alt="Graphic-3"] {
 .portfolio-head {
     font-family: 'Martius', sans-serif;
     font-size: 3.6rem;
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     text-align: center;
     margin-bottom: 49px;
     margin-left: -77px;
@@ -1403,20 +1403,20 @@ img[alt="Graphic-3"] {
     font-family: 'Martius', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: var(--black);
+    color: var(--periwinkle);
 }
 
 .portfolio-card .card-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 1.6;
-    color: var(--black);
+    color: var(--periwinkle);
     text-align: center;
 }
 
 .portfolio-card .badge {
-    background-color: var(--khaki);
-    color: var(--black);
+    background-color: var(--soft-periwinkle);
+    color: var(--periwinkle);
     font-size: 0.9rem;
     font-weight: 500;
     padding: 5px 10px;
@@ -1436,12 +1436,12 @@ img[alt="Graphic-3"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 7px solid var(--khaki);
+    border-bottom: 7px solid var(--soft-periwinkle);
 }
 
 .contact-heading {
     font-family: 'Martius', sans-serif;
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     margin-bottom: 210px;
     font-size: 32px;
 }
@@ -1462,16 +1462,16 @@ img[alt="Graphic-3"] {
 }
 
 .contact-main-section .contact-col-left {
-    border-left: 2.1px solid var(--khaki);
-    border-bottom: 2.1px solid var(--khaki);
-    border-top: 2.1px solid var(--khaki);
+    border-left: 2.1px solid var(--soft-periwinkle);
+    border-bottom: 2.1px solid var(--soft-periwinkle);
+    border-top: 2.1px solid var(--soft-periwinkle);
     border-radius: 18px;
 }
 
 .contact-main-section .contact-col-right {
-    border-top: 2.1px solid var(--khaki);
-    border-bottom: 2.1px solid var(--khaki);
-    border-right: 2.1px solid var(--khaki);
+    border-top: 2.1px solid var(--soft-periwinkle);
+    border-bottom: 2.1px solid var(--soft-periwinkle);
+    border-right: 2.1px solid var(--soft-periwinkle);
     border-radius: 18px;
 }
 
@@ -1541,7 +1541,7 @@ img[alt="Graphic-3"] {
     font-family: 'Martius', 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1rem;
-    color: var(--black);
+    color: var(--periwinkle);
     margin-bottom: 4px;
     letter-spacing: 0.5px;
     padding-right: 4px;
@@ -1552,9 +1552,9 @@ img[alt="Graphic-3"] {
 .contact-form textarea {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    color: var(--black);
-    background: var(--white);
-    border: 2px solid var(--khaki);
+    color: var(--periwinkle);
+    background: var(--ghost-white);
+    border: 2px solid var(--soft-periwinkle);
     border-radius: 8px;
     padding: 12px 14px;
     margin-bottom: 16px;
@@ -1566,9 +1566,9 @@ img[alt="Graphic-3"] {
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-    border-color: var(--black);
+    border-color: var(--periwinkle);
     background: #fffbe6;
-    box-shadow: 0 0 0 2px var(--khaki);
+    box-shadow: 0 0 0 2px var(--soft-periwinkle);
 }
 
 .contact-form select {
@@ -1587,8 +1587,8 @@ img[alt="Graphic-3"] {
 }
 
 .contact-form button[type="submit"] {
-    background: var(--khaki);
-    color: var(--black);
+    background: var(--soft-periwinkle);
+    color: var(--periwinkle);
     font-family: 'Martius', 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1598,14 +1598,14 @@ img[alt="Graphic-3"] {
     margin-top: 10px;
     width: 100%;
     transition: background 0.2s, color 0.2s;
-    box-shadow: 0 2px 8px -2px var(--khaki);
+    box-shadow: 0 2px 8px -2px var(--soft-periwinkle);
     letter-spacing: 1px;
 }
 
 .contact-form button[type="submit"]:hover,
 .contact-form button[type="submit"]:focus {
-    background: var(--black);
-    color: var(--khaki);
+    background: var(--periwinkle);
+    color: var(--soft-periwinkle);
 }
 
 .contact-form ::placeholder {
@@ -1642,7 +1642,7 @@ img[alt="Graphic-3"] {
     box-shadow: 0 4px 24px -8px rgba(200, 180, 30, 0.10);
     padding: 2.5rem 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    color: var(--black);
+    color: var(--periwinkle);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1653,7 +1653,7 @@ img[alt="Graphic-3"] {
     max-width: 110px;
     margin-bottom: 1.2rem;
     border-radius: 12px;
-    box-shadow: 0 2px 8px -2px var(--khaki);
+    box-shadow: 0 2px 8px -2px var(--soft-periwinkle);
     background: #fff;
     padding: 0.5rem;
 }
@@ -1662,7 +1662,7 @@ img[alt="Graphic-3"] {
     font-family: 'Martius', 'Montserrat', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
 }
@@ -1672,12 +1672,12 @@ img[alt="Graphic-3"] {
     align-items: center;
     font-size: 1.05rem;
     margin-bottom: 0.7rem;
-    color: var(--black);
+    color: var(--periwinkle);
     word-break: break-word;
 }
 
 .contact-info-box .info-item i {
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     margin-right: 10px;
     font-size: 1.2rem;
     min-width: 22px;
@@ -1691,7 +1691,7 @@ img[alt="Graphic-3"] {
 }
 
 .contact-info-box .opening-hours strong {
-    color: var(--black);
+    color: var(--periwinkle);
     font-size: 1.08rem;
     letter-spacing: 0.5px;
 }
@@ -1803,7 +1803,7 @@ img[alt="Graphic-3"] {
     padding: 2rem 0.5rem 1rem 0.5rem !important;
     background-size: cover !important;
     background-position: center !important;
-    border-bottom: 7px solid var(--khaki);
+    border-bottom: 7px solid var(--soft-periwinkle);
     z-index: 2;
   }
   .contact-heading {
@@ -1811,7 +1811,7 @@ img[alt="Graphic-3"] {
     padding: 0.5rem !important;
     margin-bottom: 4rem !important;
     margin-top: 2rem !important;
-    color: var(--khaki);
+    color: var(--soft-periwinkle);
     text-align: center !important;
     z-index: 2;
     position: static !important;
