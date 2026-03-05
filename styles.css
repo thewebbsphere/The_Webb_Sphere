@@ -1,27 +1,7 @@
-/* Absolutely positioned CTA button for hero section */
-.hero-cta-absolute {
-    position: absolute;
-    bottom: 30%;
-    left: 32%;
-    transform: translateX(-50%);
-    z-index: 10;
-    padding: 1rem 2.5rem;
-    font-size: 1.25rem;
-    background-color: var(--ghost-white);
-    font-weight: 700;
-    color: var(--periwinkle);
-    border-radius: 0;
-    text-decoration: none;
-    transition: all 0.7s ease;
-    cursor: pointer;
-}
-.hero-cta-absolute:hover {
-    background-color: var(--periwinkle);
-    color: var(--ghost-white)
-}
+
 /*********************************************************************** Global Stylesheet for the Website ***********************************************************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*********** Martius Font ***********/
 
@@ -297,7 +277,30 @@ img[alt="Graphic-3"] {
     top: -110px;
 }
 
-/*********************************************************************** About Section ***********************************************************************/
+/* Absolutely positioned CTA button for hero section */
+.hero-cta-absolute {
+    position: absolute;
+    bottom: 30%;
+    left: 32%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
+    background-color: var(--ghost-white);
+    font-weight: 700;
+    color: var(--periwinkle);
+    border-radius: 0;
+    border: 1.4px solid var(--soft-periwinkle);
+    text-decoration: none;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+.hero-cta-absolute:hover {
+    background-color: var(--periwinkle);
+    color: var(--ghost-white)
+}
+
+/* About Section */
 
 .about-section {
     display: flex;
@@ -306,7 +309,7 @@ img[alt="Graphic-3"] {
     justify-content: space-between;
     height: auto;
     padding: 40px 20px;
-    border-bottom: 21px solid var(--soft-periwinkle);
+    margin: 8rem 2rem;
 }
 
 .about-section .about-content {
@@ -320,7 +323,7 @@ img[alt="Graphic-3"] {
 .about-section .about-content h2 {
     font-family: "Martius", sans-serif;
     font-size: 3.6rem;
-    color: var (--khaki);
+    color: var(--khaki);
     margin-bottom: 4.9rem;
     margin-left: -210px;
     padding-left: 14px;
@@ -328,10 +331,12 @@ img[alt="Graphic-3"] {
 }
 
 .about-section .about-content p {
+    font-family: "Google Sans Code", monospace;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    margin-left: -21px;
+    letter-spacing: 0.7px;
+    font-weight: 100;
 }
 
 .about-section .about-content .cta-button {
@@ -399,7 +404,7 @@ img[alt="Graphic-3"] {
     }
 }
 
-/*********************************************************************** Testimonials Section ***********************************************************************/
+/* Testimonials Section */
 
 .testimonials-section {
     padding: 50px 20px;
@@ -456,7 +461,7 @@ img[alt="Graphic-3"] {
     color: var(--ghost-white);
 }
 
-/*********************************************************************** Footer Section ***********************************************************************/
+/* Footer Section */
 
 .site-footer {
     padding: 49px;
@@ -557,7 +562,7 @@ img[alt="Graphic-3"] {
     display: none;
 }
 
-/*********************************************************************** Responsiveness ***********************************************************************/
+/* Responsiveness */
 
 @media (max-width: 768px) {
     .navbar-toggler {
@@ -981,7 +986,7 @@ img[alt="Graphic-3"] {
   }
 }
 
-/*********************************************************************** Commitment Section ***********************************************************************/
+/*Commitment Section*/
 
 .card {
     border: none;
@@ -1046,7 +1051,7 @@ img[alt="Graphic-3"] {
     padding: 0.4rem 0;
 }
 
-/*********************************************************************** Duties Section ***********************************************************************/
+/* Duties Section */
 
 .duties {
     height: 100vh;
@@ -1255,8 +1260,8 @@ img[alt="Graphic-3"] {
 }
 
 
-/*********************************************************************** SERVICE PAGE ***********************************************************************/
-/*********************************************************************** Service Categories Section ***********************************************************************/
+/* SERVICE PAGE*/
+/* Service Categories Section */
 
 .service-categories {
     display: flex;
@@ -1367,7 +1372,7 @@ img[alt="Graphic-3"] {
     box-shadow: none;
 }
 
-/*********************************************************************** Portfolio Section ***********************************************************************/
+/* Portfolio Section */
 
 
 .portfolio {
