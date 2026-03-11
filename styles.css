@@ -295,9 +295,14 @@ img[alt="Graphic-3"] {
     transition: all 0.7s ease;
     cursor: pointer;
 }
+
 .hero-cta-absolute:hover {
     background-color: var(--periwinkle);
     color: var(--ghost-white)
+}
+
+.hero-cta-absolute a {
+    text-decoration: none;
 }
 
 /* About Section */
@@ -998,8 +1003,8 @@ img[alt="Graphic-3"] {
 
 .card:hover {
     transform: scale(1.02);
-    border-radius: 10px;
-    box-shadow: 5px 2.5px 5px -2px var(--soft-periwinkle);
+    border-radius: 0;
+    border: 1.4px solid var(--soft-periwinkle);
 }
 
 .card-body {
@@ -1269,12 +1274,9 @@ img[alt="Graphic-3"] {
     justify-content: center;
     gap: 20px;
     padding: 49px 0;
-    border-left: 4px solid var(--soft-periwinkle);
 }
 .service-category-card {
     background-color: var(--ghost-white);
-    border: 1px solid var(--periwinkle);
-    border-radius: 10px;
     padding: 20px;
     width: 300px;
     text-align: center;
@@ -1323,9 +1325,6 @@ img[alt="Graphic-3"] {
 
 .values {
     padding: 140px 0;
-    border-top-right-radius: 14px;
-    border-top: 4px solid var(--soft-periwinkle);
-    border-right: 4px solid var(--soft-periwinkle);
 }
 
 .values .values-right {
@@ -1377,7 +1376,6 @@ img[alt="Graphic-3"] {
 
 .portfolio {
     padding: 63px 0;
-    border-right: 4px solid var(--soft-periwinkle);
 }
 
 .portfolio-row {
